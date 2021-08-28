@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <LinearLayout
+        android:id="@+id/hori_linear"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Details"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:paddingStart="50dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/slack"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:paddingEnd="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_linear"
+        android:layout_width="0dp"
+        android:layout_height="330dp"
+        android:layout_above="@+id/detailBack"
+        android:layout_below="@+id/hori_linear"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/corner_box"
+        android:elevation="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Your Name"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:text="TextView"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:text="TextView"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:text="TextView"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:text="TextView"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/white_corner"
+            android:padding="20dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/detailBack"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_above="@+id/voteText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/detail_linear"
+        android:layout_toEndOf="@+id/detail_linear"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/voteText"
+        android:layout_width="305dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="46dp"
+        android:clickable="true"
+        android:text="Voting Check"
+        android:textAlignment="center"
+        android:textSize="17sp" />
+</RelativeLayout>
